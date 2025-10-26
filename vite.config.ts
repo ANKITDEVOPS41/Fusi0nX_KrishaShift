@@ -55,6 +55,7 @@ export default defineConfig(({ mode }) => ({
   },
   optimizeDeps: {
     include: ['@tensorflow/tfjs', 'socket.io-client', 'firebase/app', 'firebase/auth'],
+    exclude: ['@tensorflow/tfjs-core'],
   },
   build: {
     target: 'esnext',
